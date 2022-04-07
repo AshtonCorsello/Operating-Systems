@@ -1,13 +1,3 @@
-include <sys/mman.h>
-#include <sys/stat.h>
-#include <sys/shm.h>
-#include <fcntl.h>
-#include <semaphore.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <errno.h>
-#include <iostream>
 #include "prod_consum.hpp"
 
 struct SharedMem *map;          //Shared memory structure containing buffer space and semaphores 
@@ -55,8 +45,7 @@ int main(int argc, char *argv[]) {
                 error("Semaphore 'Mutex' initialization");
         }
 
-
-
+        
         int index = 0;      //Keeps track of location in buffer
         for (int i = 0; i < 10; i++) {
 
