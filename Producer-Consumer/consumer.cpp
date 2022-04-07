@@ -1,12 +1,3 @@
-#include <sys/mman.h>
-#include <sys/stat.h>
-#include <sys/shm.h>
-#include <fcntl.h>
-#include <semaphore.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <iostream>
 #include "prod_consum.hpp"
 
 struct SharedMem *map;     //Structure for shared memeory space containing buffer and semaphores
