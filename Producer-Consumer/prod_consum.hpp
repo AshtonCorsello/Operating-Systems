@@ -20,7 +20,7 @@ struct SharedMem {
                                                                                                       
 char *pathName;                                                                                       
                                                                                                       
-void error(std::string msg) {                                                                         
+void error(char **msg) {                                                                         
         std::cerr <<"ERROR: " << msg << " failed. Terminating." << std::endl;                         
         exit(1);                                                                                      
 }                                                                                                     
