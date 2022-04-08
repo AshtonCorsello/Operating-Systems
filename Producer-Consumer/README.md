@@ -6,7 +6,7 @@ corrupted. This program serves as a visualization of this problem.
 
 ## Usage
 To run this program, use the following commands
-```cpp
+```bash
 g++ producer.cpp -pthread -lrt -o producer
 g++ consumer.cpp -pthread -lrt -o consumer
 ./producer pathName & ./consumer pathName
