@@ -1,6 +1,6 @@
 #include "prod_consum.hpp"
 
-struct SharedMem *map;          //Shared memory structure containing buffer space and semaphores 
+struct SharedMem *map;     //Shared memory structure containing buffer space and semaphores 
 
 int main(int argc, char *argv[]) {
 
