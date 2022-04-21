@@ -112,7 +112,7 @@ int main() {
         }
 
         //If sequence is safe, print sequence
-        std::cout << "The sequence is safe. The Safe sequence = " << std::endl;
+        std::cout << "The sequence is safe. The safe sequence = " << std::endl;
         for (int k = 0; k < n; k++) {
                 std::cout << "P" <<  safeSequence[k] << " ";
         }
